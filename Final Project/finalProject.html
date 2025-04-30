@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <title>WEB-115 Final Project</title>
+  <script src="projectJS.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Build Your Meal Plan</h1>
+    <h3>Mireliz Gimenez | WEB-115 | Section 0004</h3>
+    <img src="mealplanBanner.png" alt="Meal Planner Banner" style="width: 100%; height: auto;">
+  </header>
+
+  <form id="mealForm">
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label>Name: <input type="text" id="name" required></label><br>
+      <label>Email: <input type="email" id="email" required></label><br>
+      <label>Weekly Goal: <input type="text" id="goal"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Meals for the Week</legend>
+      <div id="mealInputs"></div>
+    </fieldset>
+
+    <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+    <button type="reset">Clear Planner</button>
+    <button type="button" onclick="window.print()">Print Planner</button>
+  </form>
+</body>
+</html>
